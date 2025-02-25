@@ -1,0 +1,64 @@
+/* styles.css: 전체 스타일 */
+
+/* 전체 배경 */
+body {
+    font-family: 'Pretendard', sans-serif;
+    background: #F2F3F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #E5E7EB;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    text-align: center;
+}
+
+/* 버튼 스타일 */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: #E5E7EB;
+    color: #333;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.15), inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+}
+
+/* 지도 스타일 */
+.map {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* 인증 성공 및 실패 메시지 스타일 */
+.success-text {
+    color: green;
+    font-weight: bold;
+}
+
+.error-text {
+    color: red;
+    font-weight: bold;
+}
