@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 위치 인증</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script-user.js"></script>
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=a50e768349b68eac92037c8858d7a462&libraries=services"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>사용자 위치 인증</h1>
+        <p>🔵 관리자 위치: <span id="adminAddress"></span></p>
+        <p>🟢 내 위치: <span id="userAddress"></span></p>
+        <div id="map" class="map"></div>
+        <div id="result"></div>
+        <button id="surveyBtn" style="display:none;">📋 설문 참여</button>
+        <button onclick="location.href='index.html'">홈으로</button>
+    </div>
+</body>
+</html>
