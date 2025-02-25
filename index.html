@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>위치 기반 설문</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -10,6 +11,28 @@
         <h1>위치 기반 설문</h1>
         <button onclick="location.href='admin.html'">관리자 페이지</button>
         <button onclick="location.href='user.html'">사용자 페이지</button>
+    </div>
+</body>
+</html>
+
+<!-- admin.html: 관리자 위치 설정 페이지 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 위치 설정</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script-admin.js"></script>
+    <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=YOUR_API_KEY&libraries=services"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>관리자 위치 설정</h1>
+        <input type="text" id="locationInput" placeholder="위치를 입력하세요">
+        <button onclick="setLocation()">위치 설정</button>
+        <div id="map" class="map"></div>
+        <button onclick="location.href='index.html'">홈으로</button>
     </div>
 </body>
 </html>
